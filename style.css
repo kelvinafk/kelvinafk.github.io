@@ -11,8 +11,8 @@ h1 {
   text-align: -webkit-center;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: fantasy;
   border-color: blue;
   border-style: double;
   border-width: 10px;
+  font-family: serif;
 }

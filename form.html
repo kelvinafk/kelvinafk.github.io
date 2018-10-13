@@ -1,0 +1,40 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Home page</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Home_style.css">
+
+  <script>
+      function show_topic() {
+        var x = prompt("Enter X value");
+        var y = prompt("Enter Y value");
+        var z = parseInt(x) + parseInt(y);
+        alert("z = " + z);
+      x.style.fontSize = "25px";
+      x.style.color = "red";
+      document.getElementById("well").innerHTML = "The answer is "+ z;
+    }</script>
+  </head>
+
+<body>
+
+  <div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="text">Enter X:</label>
+      <input type="text" class="form-control" id="x_value" placeholder="Enter X value" name="x_value">
+    </div>
+    <div class="form-group">
+      <label for="text">Enter Y:</label>
+      <input type="text" class="form-control" id="y_value" placeholder="Enter Y value" name="y_value">
+    </div>
+    <button type="submit" class="btn btn-info" onclick="show_topic()">Submit</button>
+  </form>
+</div>
+
+<div class="well">Basic Well</div>
+
+</body>

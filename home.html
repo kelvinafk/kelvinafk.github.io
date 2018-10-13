@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Home page</title>
-  <link rel="stylesheet" type="text/css" href="Home_style.css">
-  <script src="script.js"></script>
-  <script>
-  function show_topic() {
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script>
+    function show_topic() {
     var x = document.getElementById("demo");
     var my_name = prompt("Enter your name:")
     x.style.fontSize = "25px";
@@ -17,28 +17,64 @@
 <body>
 
 <!-- Site navigation menu -->
-<ul class="navbar">
-  <li><a href="home.html">Home page</a>
-  <li><a href="musings.html">Musings</a>
-  <li><a href="town.html">My town</a>
-  <li><a href="links.html">Links</a>
-</ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Kelvin's Personal Webpage</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html">Home page</a>
+      <li><a href="musings.html">Musings</a>
+      <li><a href="town.html">My town</a>
+      <li><a href="links.html">Links</a>
+      <li><a href="BMI-calculator/index.html">BMI Calculator</a>
+    </ul>
+  </div>
+</nav>
+</div>
 
-<!-- Main content -->
-<h1>Home page</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">
+      <h1>Home page</h1>
 
-<p>Welcome to my styled page!
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Kelvin's card</h5>
+          <p class="card-text">Hi! Nice to meet you!</p>
+          <a href="https://getbootstrap.com/docs/4.1/components/card/" class="btn btn-warning" >Go somewhere~</a>
+        </div>
+      </div>
 
-<p>It lacks images, but at least it has style.
-And it has links, even if they do not go
-anywhere&hellip;
+      <p>Welcome to my styled page!
 
-<p id='demo'></p>
-<button onclick="show_topic();">Click this button!</button>
+      <p>It lacks images, but at least it has style.
+      And it has links, even if they do not go
+      anywhere&hellip;
+    </div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">
 
-<!-- Sign and date the page, it is only polite! -->
-<address>Made 6 October 2018<br>
-  by myself.</address>
+      <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <button type="button" class="btn btn-dark" onclick="show_topic();">Submit</button>
+      </form>
+
+      <p id='demo'></p>
+      <button type="button" class="btn btn-success" onclick="show_topic();">Click this button!</button>
+
+
+
+      <!-- Sign and date the page, it is only polite! -->
+      <address>Made 6 October 2018<br>
+        by myself.</address>
+          </div>
+    <div class="col-sm-4" style="background-color:lavender;">Finish!</div>
+</div>
 
 </body>
 </html>
