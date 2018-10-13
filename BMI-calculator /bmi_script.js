@@ -25,7 +25,7 @@ function check_form(form) {
 }
 
 function compute_form(form) {
-      
+
        if (check_form(form)) {
          var weight = Number(document.getElementById("weight").value);
          var height = Number(document.getElementById("height").value);
